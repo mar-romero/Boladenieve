@@ -1,0 +1,25 @@
+<div class="container-fluid p-4">
+    <form class="row g-3" action="/links/buscar/inve" method="post">
+        <div class="col-auto" id="formbus">
+            <input class="form-control me-2" type="search" name="producto" placeholder="Producto a buscar"
+                aria-label="Search" id="inbus">
+            <button class="btn btn-outline-success" href="" id="btnpri">Search</button>
+        </div>
+    </form>
+    <div class="col-md-3" id="lipro">
+        {{#each inve}}
+        <div class="card text-center" id="pro">
+            <div class="card-body">
+                <h5 class="card-tittle text-uppercase" id="nombre">{{nombre}}</h5>
+                <p class="m-2">Cantidad: {{unidades}}</p>
+                <p class="m-2">Precio: ${{precio}}</p>
+                <p class="m-2">Cuanta plata se vendio: ${{dprecio}}</p>
+                <p class="m-2">Descripcion: {{description}}</p>
+                <p class="m-2">Fue hace: {{timeago created_at}}</p>
+                <a href="/links/delete/{{id}}" class="btn btn-danger" id="btnpri">Eliminar</a>
+                <a href="/links/edit/{{id}}" class="btn btn-secondary" id="btnpri">Agregar</a>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>

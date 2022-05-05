@@ -1,0 +1,27 @@
+{{#if user}}
+<nav id="navbar">
+  <input type="checkbox" id="check">
+  <label for="check" class="checkbtn">
+    <i class="fas fa-bars"></i>
+  </label>
+  <a href="/" id="enlace">
+    <img src="src/public/img/bola de nieve_ccexpress.png" alt="Bola de Nieve" id="logo" height="70px">
+    Bola de Nieve
+  </a>
+  <ul >
+    <li >
+      <a class="active" href="/links/">Inventario</a>
+    </li>
+    <li >
+      <a href="/links/ventas/list" >Ventas</a>
+    </li>
+    <li >
+      <a href="/links/add" >Agregar a inventario</a>
+    </li>
+    <li >
+      <a href="/logout" >Cerrar sesión</a>
+    </li>
+  </ul>
+
+</nav>
+{{/if}}

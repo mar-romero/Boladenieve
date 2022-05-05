@@ -1,0 +1,35 @@
+<div class="container-fluid p-4">
+    <form class="row g-3" action="/links/buscar" method="post">
+        <div class="col-auto" id="formbus">
+            <input class="form-control me-2" type="search" name="producto" placeholder="Producto a buscar"
+                aria-label="Search" id="inbus">
+            <button class="btn btn-outline-success" href="" id="btnpri">Search</button>
+        </div>
+    </form>
+    <div class="col-md-3"id="lipro">
+        {{#each inve}}
+        <div     >
+            <form action="/links/vendio/{{id}}" method="post">
+                <div class="card text-center" id="pro">
+                    <div class="card-body">
+                        <h5 class="card-tittle text-uppercase">{{nombre}}</h5>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Precio: </span>
+                            <input type="text" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default" name="vprecio">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Cantidad: </span>
+                            <input type="text" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default" name="cantidad">
+                        </div>
+                        <p class="m-2">Quedan: {{unidades}}</p>
+                        <p class="m-2">Descripcion: {{description}}</p>
+                        <button class="btn btn-danger" id="btnpri">Vender</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        {{/each}}
+    </div>
+</div>

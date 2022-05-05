@@ -1,0 +1,37 @@
+<div class="container-fluid p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card">
+                <div class="card-body">
+                    <form action="/links/edit/{{cant.id}}" method="post">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-default">¿Quiere cambiar el nombre?</span>
+                            <input type="text" value="{{cant.nombre}}" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default" name="nombre" autofocus>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Sume la cantidades de gramos</span>
+                            <input type="number" value="{{cant.unidades}}" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default" name="cantidad">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-default">¿Cuanto salio?</span>
+                            <input type="number" value="{{cant.precio}}"class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default" name="precio">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-default">¿Quiere cambiar la descripción?</span></span>
+                            <input type="text" value="{{cant.description}}" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default" name="description">
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-primary" id="btnpri">
+                                Guardar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

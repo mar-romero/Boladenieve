@@ -1,0 +1,205 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#cruz {
+  background-color: transparent;
+  border: none;
+}
+
+nav {
+  background-color: rgb(195, 131, 255) !important;
+  height: 110px;
+  width: 100%;
+}
+
+#enlace {
+  position: absolute;
+  padding: 20px 50px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+}
+
+#logo {
+  height: 80px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 30px;
+  margin-top:10px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  text-decoration: none;
+  padding: 7px 13px;
+
+}
+
+li a:hover {
+  background-color: rgb(255, 255, 255);
+  transition: .5s;
+  color: rgb(195, 131, 255) !important;
+  border-radius: 5px;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 952px) {
+  .enlace {
+    padding-left: 20px;
+
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+
+}
+
+@media (max-width: 900px) {
+
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(195, 131, 255);
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    z-index: 1;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 60px 0;
+    line-height: 40px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  li a:hover{
+    background:none;
+    color:red;
+  }
+  #check:checked ~ul{
+    left:0%;
+    z-index: 1;
+    margin-top: 19px;
+  }
+
+  #lipro {
+    display: grid !important;
+    grid: repeat(10000, 320px) / auto-flow 10px!important;
+    margin-left: 0px!important;
+  }
+
+  pro{
+    height: 25px !important;
+    width: 25px !important;
+    margin-bottom: 20px !important;
+  }
+  #formbus{
+    margin-left: 10px !important;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+#btnpri {
+  background-color: rgb(195, 131, 255) !important;
+  color: rgb(255, 255, 255);
+  border-color: rgb(195, 131, 255);
+  border-radius: 50px;
+}
+
+#btnpri:hover {
+  background-color: rgb(243, 243, 243) !important;
+  color: rgb(195, 131, 255);
+  border-color: rgb(186, 112, 255);
+  border: 1px solid rgb(186, 112, 255);
+  border-bottom: 2px solid rgb(186, 112, 255);
+  border-radius: 50px;
+}
+
+#fondo {
+  background-image: url("../img/Bola.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 150%;
+  background-position: 0px -50px;
+}
+
+#caja {
+  margin-top: 250px;
+}
+
+#user {
+  margin: 20px;
+}
+
+
+#inbus {
+  width: 450px;
+}
+
+
+#listap {
+  display: flex;
+}
+
+#pro {
+  height: 300px;
+  width: 300px;
+  margin-bottom: 10px !important; 
+}
+
+#lipro {
+  display: grid !important;
+  grid-template-columns: 110% 110% 110%;
+  margin-left: 310px;
+}
+
+#formbus{
+  text-align: center;
+  width: 200px;
+  margin: 10px auto 20px auto;
+  display: flex;
+}
+
+
+#inbus{
+  width: 600px;
+}
